@@ -1,3 +1,6 @@
+/* style.css */
+
+/* General Styles */
 :root {
     --main-color: rgb(235, 194, 194);
     --body-color: rgb(243, 234, 239);
@@ -6,7 +9,16 @@
  
 body{
     margin: 0px;
-    /* background-color: var(--main-color); */
+}
+
+/* Header */
+.header{
+  background-image: url("../images/flower-header-bg.jpg");
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
 .header nav ul li{
@@ -20,6 +32,7 @@ body{
 .header nav ul{
     padding: 0%;
 }
+
 .header h1{
     display: inline-block;
     background-color: var(--main-color);
@@ -30,7 +43,6 @@ body{
     padding: 7px;
 }
 
-/* a is anchor links  */
 .header a {
     color: var(--white);
     text-decoration: none;
@@ -42,16 +54,6 @@ a:hover{
     transition: 0.3s;
 }
 
-.header{
-    background-image: url("../images/flower-header-bg.jpg");
-    height: 450px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-
-/* picture of me */
 .header img{
     height: 110px;
     display: block;
@@ -62,12 +64,12 @@ a:hover{
     transition: 0.3s;
 }
 
-/* hover for the picture of me */
 .header img:hover{
     height: 130px;
     box-shadow: 0 0 40px 20px var(--white), 0 0 100px 50px var(--main-color);
 }
 
+/* Content */
 .content{
     text-align: center;
     display: inline-block;
@@ -86,8 +88,6 @@ a:hover{
     margin-top: 20px;
     margin-left: 90px;
     margin-right: 90px;
-    /* padding: 50px; */
-    /* height: 400px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--main-color);
     color: var(--white);
@@ -96,6 +96,7 @@ a:hover{
     padding: 1px;
 }
 
+/* Work */
 .content .work{
     display: flex;
     flex-direction: column;
@@ -105,25 +106,25 @@ a:hover{
     font-size: 50px;
 }
 
-/* picture of flowers above about me */
-.cherryblossom{
-    height: 100px;
-    border-radius: 30px;
-    margin-top: 15px;
-}
-
 .prework-pic{
     height: 300px;
     border-radius: 10px;
     margin-top: 20px;
 }
 
+/* About Me */
 .aboutme{
     margin: 25px 50px 75px 100px;
     font-size: 30px;
 }
 
-/* contact me anchor */
+.cherryblossom{
+  height: 100px;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+/* Contact Me */
 .contact-me a {
     color: var(--white);
 
@@ -134,7 +135,7 @@ a:hover{
     margin: 100px;
 }
 
-
+/* Media Query */
 @media screen and (max-width: 768px){
      .about-me h2{
         font-size: 35px;
