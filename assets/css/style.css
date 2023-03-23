@@ -107,9 +107,15 @@ a:hover{
 }
 
 .prework-pic{
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+.project-pic{
+  height: 700px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 /* About Me */
